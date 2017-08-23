@@ -50,12 +50,15 @@ img {
 /* Let's position things! */
 /* Relative */
 .overlay-wrapper {
+  position: relative;
   width: 450px;
   margin: 100px auto 50px;
 }
 
 /* Absolute */
 .overlay {
+  position: absolute;
+  top: 0;
   width: 450px;
   height: 300px;
   background-color: rgba(0, 0, 0, .3);
@@ -63,9 +66,11 @@ img {
 
 /* Fixed */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   background-color: #ccc;
   border-bottom: 2px solid #bbb;
 }
-
-
-
